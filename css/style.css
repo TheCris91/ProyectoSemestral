@@ -24,4 +24,8 @@ body {
     background-attachment: fixed;   */
     background-color: rgb(40, 87, 79) !important;
 } 
-
+.fts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
