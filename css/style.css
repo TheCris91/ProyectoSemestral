@@ -11,7 +11,37 @@ body {
     justify-content: center;
     align-items: center;
 }
-.container{
+/* .container{
 display: flex;
 justify-content: center;
+} */
+.Carrusel img{
+    display: flex;
+    width: 100px;
+    height: 400px;
+}
+
+.Nosotros{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.MAPA{
+    display: flex;
+    justify-content: center;
+}
+
+.face{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.ig{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+
 }
