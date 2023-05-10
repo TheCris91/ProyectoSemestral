@@ -52,14 +52,14 @@ $(function(){
             txtUser:{
                 required:"Campo obligatorio"}
             ,
-            txtPass:{
+            txtPassword:{
                 required:"Campo obligatorio"}
             ,
             txtPassCon:{
                 required:"Campo obligatorio"}
             }
     })
-});
+})
 function pass(){
     let input = document.getElementById("txtPassword");
     if (input.type == "password") {
@@ -72,3 +72,4 @@ function pass(){
         document.getElementById("mostrar").style.display = "inline";
     }
 }
+
