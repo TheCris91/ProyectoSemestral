@@ -52,7 +52,7 @@ $(function(){
             txtUser:{
                 required:"Campo obligatorio"}
             ,
-            txtPassword:{
+            txtPass:{
                 required:"Campo obligatorio"}
             ,
             txtPassCon:{
