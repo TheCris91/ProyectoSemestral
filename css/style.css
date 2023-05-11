@@ -1,16 +1,16 @@
-body {
-    /* background-image: url(https://www.caritasgranada.org/wp-content/uploads/2016/11/Llamados-a-ser-comunidad_Navidadr-740x431.jpg);
+/* body {
+    background-image: url(https://www.caritasgranada.org/wp-content/uploads/2016/11/Llamados-a-ser-comunidad_Navidadr-740x431.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;   */
-    background-color: rgb(40, 87, 79) !important;
-} 
+    background-attachment: fixed;   
+    background-color: rgb(39, 134, 95) !important;
+}  */
 .fts{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 /* .container{
 display: flex;
 justify-content: center;
@@ -52,6 +52,9 @@ justify-content: center;
 .seccion{
     display: flex;
     justify-content: center;
+}
+#Carrito{
+    display: flex-end;
 }
 .error{
 color: red;}
