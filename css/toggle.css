@@ -14,7 +14,7 @@ body{
     box-sizing: inset 4px 4px 6px #cecece,
                       -4px -4px 6px #fff;
     margin: 0px auto;
-    margin-top: 350px;
+    margin-top: 10px;
     cursor: pointer;
 }
 .toggle{

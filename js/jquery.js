@@ -60,6 +60,7 @@ $(function(){
             }
     })
 })
+document.getElementById("ocultar").style.display="none";
 function pass(){
     let input = document.getElementById("txtPassword");
     if (input.type == "password") {

@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toggle.css">
     <title>Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
-<header>
+<body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="Index.html">
@@ -25,31 +27,56 @@
                 <a class="nav-link active" aria-current="page" href="Tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="cuarta.html">Carrito</a>
+                <a id="Carrito" class="nav-link active" aria-current="page" href="cuarta.html">
+                    <button class="btn btn--bs-body-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                </a>
             </li>
-            </div>
+            <li>
+                <a id="Ingresar" class="nav-link active" aria-current="page" href="quinta.html">
+                    <button class="btn btn--bs-body-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </button>
+                </a>
+            </li>
+            <li>
+                <a id="Registro" class="nav-link active" aria-current="page" href="segunda.html">
+                    <button class="btn btn--bs-body-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+                            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+                        </svg>
+                    </button>
+                </a>
+            </li>
+            <!-- boton modo oscuro -->
+            <li>
+                <div id="container">
+                    <div class="toggle">
+
+                    </div>
+                </div>
+            </li>
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Plantas" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            </form> -->
         </div>
         </div>
-        <a class="navbar-brand" href="quinta.html">Ingresar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            </button>
-            <a class="navbar-brand" href="segunda.html">Registro</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            </button>
     </nav>
-</header>
-<br>
-<body>
-    <div class="container">
+    <!-- Formulario registro-->
+    <div class="container mt-5">
         <form id="Reg" action="#">
         <div class="form-group">
             <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">
-            <label>Ingrese su Nombre completo:</label>
+            <label>Ingrese su nombre completo:</label>
             <br>
             <input type="text" class="form-control" placeholder="Jaime" name="txtNombre">
             <br>
@@ -78,7 +105,7 @@
             <br>
             <input type="text" class="form-control" placeholder="User name" name="txtUser">
             <br> 
-            <label>Contraseña:</label>
+            <label>Crear contraseña:</label>
             <div class="input-group mb-3">
                 <input name="txtPass" id="txtPassword" type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button onclick="pass()" class="btn btn-outline-secondary" type="button" id="button-addon2">
@@ -93,9 +120,9 @@
                         <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
                         <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
                     </svg>
-
                 </button>
             </div>
+            <label id="txtPassword-error" class="error" for="txtPassword"></label>
             <br> 
             <label>Confirmar Contraseña</label>
             <br>
@@ -110,6 +137,7 @@
     </div>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/toggle.js"></script>
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
