@@ -21,13 +21,17 @@ $(function(){
             required: true}
         ,
         txtUser:{
-            required: true}
+            required: true,
+            maxlength:15,
+            minlength:4}
         ,
         txtPass:{
-            required: true}
+            required: true,
+            minlength:8}
         ,
         txtPassCon:{
-            required: true}
+            required: true,
+            minlength:8}
         },
         messages:{
             txtNombre:{
@@ -50,13 +54,17 @@ $(function(){
                 required:"Campo obligatorio"}
             ,
             txtUser:{
-                required:"Campo obligatorio"}
+                required:"Campo obligatorio",
+                maxlength:"Excede la capacidad",
+                minlength:"Usuario no es valido"}
             ,
             txtPass:{
-                required:"Campo obligatorio"}
+                required:"Campo obligatorio",
+                minlength:"Contraseña no es valida"}
             ,
             txtPassCon:{
-                required:"Campo obligatorio"}
+                required:"Campo obligatorio",
+                minlength:"Contraseña no es valida"}
             }
     })
 })
