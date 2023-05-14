@@ -48,22 +48,22 @@
 }
 
 /*modal content*/
-/* .modal-container {
-    width: 80%; */
-    /* margin: 0 10%;
+.modal-container {
+    width: 80%; 
+    margin: 0 10%;
     max-height: 88vh;
     color: #fff;
-    /* background-color: #ff0707; */
-    /*display: flex;
+    background-color: #362a2a; 
+    display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center; 
     /*for the top*/
-    /* position: fixed;
+    position: fixed;
     overflow: auto;
     z-index: 9;
     top: 12vh;
     scrollbar-color: none;
-} */
+} 
 
 .modal-container::-webkit-scrollbar {
     display: none;
